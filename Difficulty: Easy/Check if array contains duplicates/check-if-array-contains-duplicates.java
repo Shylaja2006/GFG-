@@ -3,12 +3,13 @@
 class Solution {
     public boolean checkDuplicates(int arr[]) {
         // Code here
-        HashSet<Integer> h=new HashSet<>();
+        HashSet<Integer> s=new HashSet<>();
         for(int n:arr){
-            if(h.contains(n)){
+            if(s.contains(n)){
                 return true;
             }
-            h.add(n);
-        }return false;
+            s.add(n);
+        }
+        return false;
     }
 }
